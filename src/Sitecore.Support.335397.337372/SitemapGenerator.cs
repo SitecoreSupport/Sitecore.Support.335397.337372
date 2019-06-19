@@ -41,7 +41,6 @@ namespace Sitecore.Support.XA.Feature.SiteMetadata.Sitemap
                 {
                     results.Add(homeItem);
                 }
-                results.AddRange(GetItemsForOtherLanguages(homeItem));
 
                 while (searchQueue.Count != 0)
                 {
@@ -57,7 +56,6 @@ namespace Sitecore.Support.XA.Feature.SiteMetadata.Sitemap
                                 {
                                     results.Add(child);
                                 }
-                                results.AddRange(GetItemsForOtherLanguages(child));
                             }
 
                             if (child.HasChildren)
